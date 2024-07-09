@@ -62,6 +62,11 @@ body{
   line-height: 9.5rem; /* 237.5% */
 }
 
+#form-response {
+  font-size: 3.2rem;
+  display: none;
+}
+
 .waitlist {
   display: flex;
   width: auto;

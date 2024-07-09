@@ -14,17 +14,21 @@
   <div class="banner">
     <h1 class="heading">Creativity Awaits You!!</h1>
     <h2 class="sub-heading">Join the waitlist for UI/UX services</h2>
+    
+    <p id="form-response">You are added to the waitlist✅</p>
+
     <form  class="waitlist" 
       onsubmit="submitHandler(event)"
     >
       <label for="email" class="email_label">
         <p class="email_text">Let’s collaborate on your projects*</p>
         <div class="inner-form">
-          <input type="email" name="email" id="email-input" placeholder="Enter Your Email" required>
+          <input onchange="clearResponse()" type="email" name="email" id="email-input" placeholder="Enter Your Email" required>
           <button id="submit" type="submit" >Join</button>
         </div>
       </label>
     </form>
+
   </div>
   <img src="./assets/illustration.svg" alt="Illustration" class="illustration">
 </body>
