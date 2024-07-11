@@ -64,7 +64,7 @@ body{
 
 #form-response {
   font-size: 3.2rem;
-  display: none;
+  /* display: none; */
 }
 
 .waitlist {
