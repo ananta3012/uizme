@@ -1,6 +1,7 @@
 
 const submitHandler = async (e) => {
   document.getElementById('submit').style.backgroundColor = '#afafaf';
+  document.getElementById('submit').setAttribute("disabled", "true");
   document.getElementById('form-response').style.display = 'block';
   document.getElementById('form-response').textContent = 'Please Wait...';
   e.preventDefault();
@@ -14,6 +15,7 @@ const submitHandler = async (e) => {
   })
   document.getElementById('email-input').value=''
   document.getElementById('form-response').textContent = 'You are added to the waitlist✅';
+  document.getElementById('submit').removeAttribute("disabled")
   document.getElementById('submit').style.backgroundColor = '#63432C';
 }
 
